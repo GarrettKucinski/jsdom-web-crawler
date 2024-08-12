@@ -17,7 +17,7 @@ function sortPages(pages) {
 export default function printReport(pages) {
   console.log("Starting crawl report")
   const sortedPages = sortPages(pages);
-  for (const [key, val] of Object.entries(sortedPages)) {
+  for (const [key, val] of sortedPages) {
     console.log(`Found ${val} for url ${key}`)
   }
 }
